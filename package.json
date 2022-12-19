@@ -1,0 +1,27 @@
+{
+  "name": "where-are-the-others",
+  "version": "1.0.0",
+  "description": "A Telegram bot for teams to tell one another where they are in advance. Created by Mineshafter61 for IRL promotion reasons.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mineshafter61/WhereAreTheOthers.git"
+  },
+  "keywords": [
+    "telegram",
+    "wherearetheothers"
+  ],
+  "author": "Mineshafter61",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mineshafter61/WhereAreTheOthers/issues"
+  },
+  "homepage": "https://github.com/Mineshafter61/WhereAreTheOthers#readme",
+  "dependencies": {
+    "telegraf": "^4.11.2"
+  }
+}
