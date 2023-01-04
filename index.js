@@ -309,15 +309,49 @@ bot.on('callback_query', (ctx) => {
 // action called when the view items button is pressed
 bot.action('view_items', (ctx) => {
     // get all items from the json file
-    let allItems = getAllItems(ctx.from.id);
+    fs.readFile('./chart.json', 'utf8', (err, data) => {
+        // handle errors
+        if (err) console.log(`Error reading chart.json: ${err}`);
+        else {
+            // convert to json object
+            const json = JSON.parse(data);
 
-    // required line to remove loading circle
-    ctx.answerCbQuery();
+            // get header picture
+
+
+            // get footer picture
+
+
+            // get data picture
+
+
+            // insert data
+
+
+            // stitch
+
+
+            // display to user
+
+
+            // required line to remove loading circle
+            ctx.answerCbQuery();
+
+        }
+    });
 });
 
 // bot settings
 bot.settings((ctx) => {
-    // do shit
+    // get settings file
+    fs.readFile('./settings.json', 'utf8', (err, data) => {
+        // handle errors
+        if (err) console.log(`Error reading settings.json: ${err}`);
+        else {
+            // convert to json object
+            const json = JSON.parse(data);
+        }
+    });
 });
 
 // Enable graceful stop
